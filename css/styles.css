@@ -368,6 +368,36 @@ h1{
 .destinos__Fotos h3{
     margin:1rem;
 }
+/*Rama 1 Animado.html*/
+.animado__animated{
+    background-image: radial-gradient(white, red, white);
+    transition: all 4s;
+}
+.animado__animated:hover{
+    transform: scaleY(1.2);
+}
+@keyframes animado {
+    0%{ width: 100px; }
+    10%{ width: 50px; 
+    background-color:white;}
+    25%{ width: 300px; }
+    50%{ width: 200px;
+     background-color: red; }
+    75%{ width: 300px;}
+    100%{ width: 100px;
+    background-color:white;}
+    }
+
+    .keyframe__animado {
+        width: 100%;
+        height: 100%;
+        animation-name: animado;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 60s;
+        animation-delay: 5s;
+        }
+
 /*Footer*/
 .footer{ 
     display:flex;
