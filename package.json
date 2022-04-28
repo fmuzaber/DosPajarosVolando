@@ -1,0 +1,26 @@
+{
+  "name": "dospajarosvolando",
+  "version": "1.0.0",
+  "description": "Este proyecto consiste en crear una pagina web desde 0 usando html y css.\r Tecnologias usadas:\r HTML5\r CSS3\r     GRID\r     FLEXBOX\r     BOX-SIZING\r GIT\r GITHUB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmuzaber/DosPajarosVolando.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fmuzaber/DosPajarosVolando/issues"
+  },
+  "homepage": "https://github.com/fmuzaber/DosPajarosVolando#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
