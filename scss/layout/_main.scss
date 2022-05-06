@@ -1,0 +1,148 @@
+.color__cabecera{
+    background-color: #53ca98;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+
+    .logo__hijo{
+        display: flex;
+        padding: 0;
+
+        .logo{
+            width: 75px;
+            height: 75px;  
+        }
+    }
+    .portada__imagen {                          
+        background-image: url("../images/portada4.jpeg"); 
+        /* background-attachment: fixed;      */
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 25rem;       
+        width: 100%;      
+        position: center;
+        h1{
+            display:none;
+        }
+    }
+}
+/* .portada__titulo{
+    color:rgba(14, 59, 84, 0.978);
+    font-style:italic;
+    font-weight: bold;
+    position:absolute;
+    text-align: center;
+    top: 30%;
+    margin: auto;
+    width: 100%;
+    font-size: 4.5rem;
+} */
+.blog__titulo{
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    text-decoration: underline;
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top:8rem;
+    text-align: center;
+}
+.blog__subtitulo{
+
+    color: #204580;
+    text-align: center;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.blog__contenedor{
+    color: #204580;
+    top: 25px;
+    font-size: 30px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .blog__hijo1{
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        .blog__imagen{
+            display: flex;
+            margin: 1.5rem;
+            width: 300px;
+            height: 180px;  
+            border-radius: 25px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .blog__nieto{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            text-align: center;
+            justify-content: center;
+        
+            .blog__entradas{
+                color: #204580;
+                top: 25px;
+                font-size: 1rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap:wrap;
+                justify-content:space-around;
+                align-items: center;
+                justify-items: auto;
+                line-height: 1.4;
+                margin: 1rem;
+                text-align: start;
+            }       
+        }
+    }
+    .blog__hijo2{
+        display: flex;
+        flex-direction:row-reverse;
+        justify-items: center;
+        .blog__imagen{
+            display: flex;
+            margin: 1.5rem;
+            width: 300px;
+            height: 180px;  
+            border-radius: 25px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .blog__nieto{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            text-align: center;
+            justify-content: center;
+        
+            .blog__entradas{
+                color: #204580;
+                top: 25px;
+                font-size: 1rem;
+                display: flex;
+                flex-direction: row;
+                flex-wrap:wrap;
+                justify-content:space-around;
+                align-items: center;
+                justify-items: auto;
+                line-height: 1.4;
+                margin: 1rem;
+                text-align: start;
+            }       
+        }
+    }
+}
+
+
