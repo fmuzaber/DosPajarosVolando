@@ -15,87 +15,6 @@ body {
   font-family: tipografia, sans serif;
   font-size: 1,8rem; }
 
-/*Grid - Estructura */
-/* .grid__Index{
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 3% 19% 30% 41% 7%;
-    grid-template-areas: 
-    "nav nav nav nav nav"
-    "portada portada portada portada portada"
-    "sec1 sec1 sec1 sec1 sec1"
-    "sec1 sec1 sec1 sec1 sec1"
-    "pie pie pie pie pie";
-}
-.grid__Nosotrxs{
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 6.5% 38% 20% 21.5% 14%;
-    grid-template-areas: 
-    "nav nav nav nav nav"
-    "portada portada portada portada portada"
-    "sec1 sec1 sec1 sec1 sec1"
-    "sec1 sec1 sec1 sec1 sec1"
-    "pie pie pie pie pie";
-}
-.grid__Multimedia{
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 3% 14% 32% 46.5% 4.5%;
-    grid-template-areas: 
-    "nav nav nav nav nav"
-    "portada portada portada portada portada"
-    "sec1 sec1 sec1 sec1 sec1"
-    "sec1 sec1 sec1 sec1 sec1"
-    "pie pie pie pie pie";
-}
-
-.grid__Relatos{
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 5.5% 31.5% 25% 29% 9%;
-    grid-template-areas: 
-    "nav nav nav nav"
-    "portada portada portada portada"
-    "sec1 sec1 sec1 sec1"
-    "sec1 sec1 sec1 sec1"
-    "pie pie pie pie";
-}
-.grid__Contacto{
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 9% 37% 19% 20% 15%;
-    grid-template-areas: 
-    "nav nav nav nav"
-    "portada portada portada portada"
-    "sec1 sec1 sec1 sec1"
-    "sec1 sec1 sec1 sec1"
-    "pie pie pie pie";
-}
-
-
-.grid__Nav{
-    display: grid;
-    grid-area: nav;
-    overflow: hidden;
-
-}
-.grid__Portada{
-    display:grid;
-    grid-area: portada;
-    overflow: hidden;
-}
-
-.grid__Section{
-    display: grid;
-    grid-area: sec1;
-    overflow: hidden;
-}
-.grid__Pie{
-    display: grid;
-    grid-area: pie;
-    overflow: hidden;
-}  */
 .color__nav {
   background-color: #53ca98;
   text-align: center;
@@ -135,22 +54,23 @@ body {
         transition: 1s;
         text-shadow: 0; }
 
+.centrar, .color__cabecera, .blog__contenedor .blog__hijo1 .blog__nieto, .blog__contenedor .blog__hijo2 .blog__nieto {
+  justify-content: center;
+  align-items: center; }
+
 .color__cabecera {
   background-color: #53ca98;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
+  flex-wrap: wrap; }
   .color__cabecera .logo__hijo {
     display: flex;
     padding: 0; }
     .color__cabecera .logo__hijo .logo {
-      width: 75px;
-      height: 75px; }
+      height: 75px;
+      width: 75x; }
   .color__cabecera .portada__imagen {
     background-image: url("../images/portada4.jpeg");
-    /* background-attachment: fixed;      */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -159,20 +79,15 @@ body {
     position: center; }
     .color__cabecera .portada__imagen h1 {
       display: none; }
+    @media (max-width: 768px) {
+      .color__cabecera .portada__imagen {
+        width: 100%; } }
+    @media (max-width: 360px) {
+      .color__cabecera .portada__imagen {
+        width: 100%; } }
 
-/* .portada__titulo{
-    color:rgba(14, 59, 84, 0.978);
-    font-style:italic;
-    font-weight: bold;
-    position:absolute;
-    text-align: center;
-    top: 30%;
-    margin: auto;
-    width: 100%;
-    font-size: 4.5rem;
-} */
 .blog__titulo {
-  color: white;
+  background-color: white;
   text-align: center;
   font-size: 32px;
   text-decoration: underline;
@@ -206,17 +121,15 @@ body {
     .blog__contenedor .blog__hijo1 .blog__imagen {
       display: flex;
       margin: 1.5rem;
-      width: 300px;
       height: 180px;
+      width: 300px;
       border-radius: 25px;
       justify-content: space-around;
       flex-wrap: wrap; }
     .blog__contenedor .blog__hijo1 .blog__nieto {
       display: flex;
       flex-direction: column;
-      justify-items: center;
-      text-align: center;
-      justify-content: center; }
+      justify-items: center; }
       .blog__contenedor .blog__hijo1 .blog__nieto .blog__entradas {
         color: #204580;
         top: 25px;
@@ -237,17 +150,15 @@ body {
     .blog__contenedor .blog__hijo2 .blog__imagen {
       display: flex;
       margin: 1.5rem;
-      width: 300px;
       height: 180px;
+      width: 300px;
       border-radius: 25px;
       justify-content: space-around;
       flex-wrap: wrap; }
     .blog__contenedor .blog__hijo2 .blog__nieto {
       display: flex;
       flex-direction: column;
-      justify-items: center;
-      text-align: center;
-      justify-content: center; }
+      justify-items: center; }
       .blog__contenedor .blog__hijo2 .blog__nieto .blog__entradas {
         color: #204580;
         top: 25px;
@@ -268,12 +179,17 @@ body {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 100%;
   height: 100%;
+  width: 100%;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   justify-content: space-evenly;
   align-content: center; }
+  @media (max-width: 768px) {
+    .footer {
+      width: 100%; } }
+  @media (max-width: 360px) {
+    .footer {
+      width: 100%; } }
   .footer .footer__redes {
     display: flex;
     flex-direction: row;

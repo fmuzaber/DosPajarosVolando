@@ -288,7 +288,8 @@ h1{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-/*Nosotrxs.html*/
+/*Nosotrxs.html
+esto no esta en SCSS*/
 
 .nosotrxs__card{
     display: flex;
@@ -314,7 +315,8 @@ h1{
     border-radius: 1rem;
 }
 
-/*Contacto.html*/
+/*Contacto.html
+esto no esta en SCSS*/
 .body__Contacto{
     margin:0;
     padding:0;
@@ -378,7 +380,8 @@ h1{
 .destinos__Fotos h3{
     margin:1rem;
 }
-/*Rama 1 Animado.html*/
+/*Rama 1 Animado.html
+esto no esta en SCSS*/
 .animado__animated{
     background-image: radial-gradient(white, red, white);
     transition: all 4s;
@@ -504,7 +507,8 @@ h1{
 } */
 
 
-/*mobile Index*/
+/*mobile Index
+esto no esta en SCSS*/
 @media screen and (max-width: 500px) {
 /* .grid__Index{
 display: grid;

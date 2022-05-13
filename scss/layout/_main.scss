@@ -1,49 +1,74 @@
+@mixin media-query($break-point) {
+
+	@if $break-point== lg {
+	
+		@media (max-width: 1200px) {
+			@content; }
+	}
+	@if $break-point== md {
+		@media (max-width: 768px) {
+			@content; }
+	}
+	@if $break-point== sm {
+		@media (max-width: 360px) {
+			@content; }
+	}
+}
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+
+.centrar{
+    justify-content: center;
+    align-items: center;
+}
+
+
 .color__cabecera{
     background-color: #53ca98;
     display: flex;
     flex-direction: column;
     flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
-
+    @extend .centrar;
     .logo__hijo{
         display: flex;
         padding: 0;
 
         .logo{
-            width: 75px;
-            height: 75px;  
+            @include sizes(75x, 75px);
         }
     }
     .portada__imagen {                          
         background-image: url("../images/portada4.jpeg"); 
-        /* background-attachment: fixed;      */
         background-position:center;
         background-repeat: no-repeat;
         background-size: 100%;
-        height: 25rem;       
-        width: 100%;      
+        @include sizes(100%, 25rem);      
         position: center;
         h1{
             display:none;
         }
+        @include media-query(md) {
+            width: 100%;
+        }
+        @include media-query(sm) {
+            width: 100%;
+        }
     }
 }
-/* .portada__titulo{
-    color:rgba(14, 59, 84, 0.978);
-    font-style:italic;
-    font-weight: bold;
-    position:absolute;
-    text-align: center;
-    top: 30%;
-    margin: auto;
-    width: 100%;
-    font-size: 4.5rem;
-} */
+
+$estilos: (
+    color: white,
+    centro: center,
+    tFuente: 32px,
+  );
+
 .blog__titulo{
-    color: white;
-    text-align: center;
-    font-size: 32px;
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    font-size:map-get($estilos, tFuente);
     text-decoration: underline;
     margin: 40px;
     display: flex;
@@ -78,8 +103,7 @@
         .blog__imagen{
             display: flex;
             margin: 1.5rem;
-            width: 300px;
-            height: 180px;  
+            @include sizes(300px, 180px);  
             border-radius: 25px;
             justify-content: space-around;
             flex-wrap: wrap;
@@ -88,9 +112,8 @@
             display: flex;
             flex-direction: column;
             justify-items: center;
-            text-align: center;
-            justify-content: center;
-        
+            @extend .centrar;
+
             .blog__entradas{
                 color: #204580;
                 top: 25px;
@@ -114,8 +137,7 @@
         .blog__imagen{
             display: flex;
             margin: 1.5rem;
-            width: 300px;
-            height: 180px;  
+            @include sizes(300px, 180px);  
             border-radius: 25px;
             justify-content: space-around;
             flex-wrap: wrap;
@@ -123,10 +145,8 @@
         .blog__nieto{
             display: flex;
             flex-direction: column;
-            justify-items: center;
-            text-align: center;
-            justify-content: center;
-        
+            @extend .centrar;
+            justify-items: center;  
             .blog__entradas{
                 color: #204580;
                 top: 25px;
