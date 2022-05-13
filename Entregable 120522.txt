@@ -1,0 +1,58 @@
+Uso de maps, mixin y extend:
+
+Maps: En la clase .blog__titulo reemplace los valores de color, background-color y font-size con los valores de la lista $estilos a través de un map-get.
+Extend: Cree la clase .centrar en el main.scss para reemplazar los justify-content y text-align que sean center, de forma de ahorrar codigo.
+Mixin: Cree un mixin sizes para los width y height de las imagenes de forma de ahorrar codigo. A su vez probe lo responsive con el footer y la portada para 768 y 360px.
+
+SEO:
+
+Agregue en todos los html:
+
+Los meta (name y description)
+Los title(ya tenia)
+Los h2(h1 ya tenian)
+
+Copio y pego segun html:
+
+Index.html:
+    <meta name="description" content="Somos dos Viajeros en búsqueda de cumplir un sueño, Recorrer Latinoamerica. Te invitamos a compartir el viaje con nosotrxs">
+    <meta name="keywords"  content="RELATOS, VIAJE, VIAJEROS, MOCHILEROS, NATURALEZA, MONTAÑA, PLAYA, VIDA SANA, AVENTURA, PURA VIDA, VIVIR">
+    <title>Dos pájaros volando - Bienvenid@</title>
+	<h1 class="portada__titulo">Dos Pájaros Volando</h1>
+		<h2 class="blog__subtitulo">Destinos Latinoamerica</h2>  
+	
+Contacto.html:
+
+    <meta name="description" content="Somos dos Viajeros en búsqueda de cumplir un sueño, Recorrer Latinoamerica. Te invitamos a compartir el viaje con nosotrxs">
+    <meta name="keywords"  content="NOSOTROS, VIAJE, VIAJEROS, MOCHILEROS, NATURALEZA, MONTAÑA, PLAYA, VIDA SANA, AVENTURA, PURA VIDA, VIVIR, PSICOLOGIA, PSICOLOGA, INFORMATICA, SISTEMAS, PROGRAMACION, CSS, HTML, TALLER, ORIENTACION VOCACIONAL, SESION ONLINE, TERAPIA">
+    <title>Dos Pájaros Volando - Contacto</title>
+	<h1 class="portada__titulo">Dos Pájaros Volando - Contacto</h1>
+		<h2 class="portada__titulo">Contacto</h2>
+
+Multimedia.html:
+
+ <meta name="description" content="Somos dos Viajeros en búsqueda de cumplir un sueño, Recorrer Latinoamerica. Te invitamos a compartir el viaje con nosotrxs">
+ <meta name="keywords"  content="AVENTURA, PUNTA INDIO, CARHUE, CABALANGO, COLOMBIA, URUGUAY, CORDOBA, BUENOS AIRES, ARGENTINA, TANTI, CABALANGO, SIERRA DE LA VENTANA, MONTE HERMOSO, PIRIAPOLIS, VIAJE, VIAJEROS, MOCHILEROS, NATURALEZA, MONTAÑA, PLAYA, VIDA SANA, AVENTURA, PURA VIDA, VIVIR">
+ <title>Dos Pájaros Volando - Multimedia</title>
+ <h1 class="portada__titulo">Dos Pájaros Volando - Multimedia</h1>
+    <h2 class="portada__titulo">Multimedia</h2>
+        <h3 class="blog__subtitulo">Uruguay</h3>
+
+Nosotrxs.html:
+
+<meta name="description" content="Somos dos Viajeros en búsqueda de cumplir un sueño, Recorrer Latinoamerica. Te invitamos a compartir el viaje con nosotrxs">
+<meta name="keywords"  content="NOSOTROS, VIAJE, VIAJEROS, MOCHILEROS, NATURALEZA, MONTAÑA, PLAYA, VIDA SANA, AVENTURA, PURA VIDA, VIVIR, PSICOLOGIA, PSICOLOGA, INFORMATICA, SISTEMAS, PROGRAMACION, CSS, HTML, TALLER, ORIENTACION VOCACIONAL, SESION ONLINE, TERAPIA">
+<title>Dos Pájaros Volando - Nosotrxs</title>
+<h1 class="portada__titulo">Dos Pájaros Volando - Nosotrxs</h1>
+<h2 class="portada__titulo">Nosotr@s</h2>
+
+Relatos.html:
+
+<meta name="description" content="Somos dos Viajeros en búsqueda de cumplir un sueño, Recorrer Latinoamerica. Te invitamos a compartir el viaje con nosotrxs">
+<meta name="keywords"  content="RELATOS, VIAJE, VIAJEROS, MOCHILEROS, NATURALEZA, MONTAÑA, PLAYA, VIDA SANA, AVENTURA, PURA VIDA, VIVIR">
+<title>Dos Pájaros Volando - Relatos</title>
+<h1 class="portada__titulo">Dos Pájaros Volando - Vivencias</h1>
+<h2 class="portada__titulo">Relatos</h2>
+
+		
+
