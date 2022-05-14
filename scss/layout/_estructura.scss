@@ -1,0 +1,13 @@
+html{
+    font-size: 62,5%;
+}
+
+@font-face {
+    font-family: tipografia;
+    src: url("../fonts/UbuntuCondensed-Regular.ttf");
+}
+body {
+    background-color: #53ca98;
+    font-family: tipografia, sans serif;
+    font-size: 1,8rem;
+}
