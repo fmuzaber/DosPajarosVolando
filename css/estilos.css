@@ -13,21 +13,17 @@ html {
 body {
   background-color: #53ca98;
   font-family: tipografia, sans serif;
-  font-size: 1,8rem; }
+  font-size: 2.5rem; }
 
 .color__nav {
-  background-color: #53ca98;
-  text-align: center;
-  justify-content: center; }
+  background-color: #53ca98; }
 
 .barraNavegacion {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   font-size: 0;
-  width: 100%;
-  text-align: center;
-  justify-content: center; }
+  width: 100%; }
   .barraNavegacion li {
     background-color: #53ca98;
     list-style-type: none;
@@ -37,24 +33,22 @@ body {
     padding: 2px;
     margin: 3px;
     justify-items: space-evenly;
+    align-items: space-around;
     width: 16,66%;
-    font-size: 30px;
-    text-align: center;
-    justify-content: center; }
+    font-size: 30px; }
     .barraNavegacion li a {
       color: white;
       text-decoration: none;
       text-shadow: 2px 2px 2px #FF7C70;
       display: flex;
       flex-wrap: wrap;
-      text-align: center;
-      justify-content: center; }
+      margin-left: 7vw; }
       .barraNavegacion li a:hover {
         color: #FF7C70;
         transition: 1s;
         text-shadow: 0; }
 
-.centrar, .color__cabecera, .blog__contenedor .blog__hijo1 .blog__nieto, .blog__contenedor .blog__hijo2 .blog__nieto {
+.centrar, .color__nav, .barraNavegacion, .barraNavegacion li, .color__cabecera, .blog__contenedor .blog__hijo1 .blog__nieto, .blog__contenedor .blog__hijo2 .blog__nieto {
   justify-content: center;
   align-items: center; }
 
@@ -89,7 +83,7 @@ body {
 .blog__titulo {
   background-color: white;
   text-align: center;
-  font-size: 32px;
+  font-size: 4rem;
   text-decoration: underline;
   margin: 40px;
   display: flex;
@@ -100,7 +94,7 @@ body {
 .blog__subtitulo {
   color: #204580;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 3rem;
   text-decoration: underline;
   margin: 2rem;
   display: flex;
@@ -109,7 +103,7 @@ body {
 .blog__contenedor {
   color: #204580;
   top: 25px;
-  font-size: 30px;
+  font-size: 2rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -133,7 +127,7 @@ body {
       .blog__contenedor .blog__hijo1 .blog__nieto .blog__entradas {
         color: #204580;
         top: 25px;
-        font-size: 1rem;
+        font-size: 1.5rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -162,7 +156,7 @@ body {
       .blog__contenedor .blog__hijo2 .blog__nieto .blog__entradas {
         color: #204580;
         top: 25px;
-        font-size: 1rem;
+        font-size: 1.5rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -172,6 +166,26 @@ body {
         line-height: 1.4;
         margin: 1rem;
         text-align: start; }
+
+.nosotrxs__card {
+  display: flex;
+  flex-direction: row;
+  justify-items: space-around;
+  align-items: center;
+  padding: 0.75rem;
+  margin: 1rem;
+  margin-top: 5rem;
+  border: double 0.5rem #FF7C70;
+  overflow: hidden; }
+  .nosotrxs__card .nosotrxs__lista li {
+    color: white;
+    list-style: lower-greek;
+    margin: 2rem; }
+  .nosotrxs__card .nosotrxs__imagen {
+    margin: 1rem;
+    width: 23.5rem;
+    height: 18.5rem;
+    border-radius: 1rem; }
 
 .footer {
   display: flex;

@@ -19,13 +19,10 @@
     height: $height;
     width: $width;
  }
-
 .centrar{
     justify-content: center;
     align-items: center;
 }
-
-
 .color__cabecera{
     background-color: #53ca98;
     display: flex;
@@ -35,7 +32,6 @@
     .logo__hijo{
         display: flex;
         padding: 0;
-
         .logo{
             @include sizes(75x, 75px);
         }
@@ -58,13 +54,11 @@
         }
     }
 }
-
 $estilos: (
     color: white,
     centro: center,
-    tFuente: 32px,
+    tFuente: 4rem,
   );
-
 .blog__titulo{
     background-color: map-get($estilos, color);
     text-align: map-get($estilos, centro);
@@ -77,25 +71,22 @@ $estilos: (
     text-align: center;
 }
 .blog__subtitulo{
-
     color: #204580;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 3rem;
     text-decoration: underline;
     margin: 2rem;
     display: flex;
     flex-direction: row;
 }
-
 .blog__contenedor{
     color: #204580;
     top: 25px;
-    font-size: 30px;
+    font-size: 2rem;
     display: flex;
     flex-wrap:wrap;
     flex-direction: column;
     justify-content: space-around;
-
     .blog__hijo1{
         display: flex;
         flex-direction: row;
@@ -113,11 +104,10 @@ $estilos: (
             flex-direction: column;
             justify-items: center;
             @extend .centrar;
-
             .blog__entradas{
                 color: #204580;
                 top: 25px;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 display: flex;
                 flex-direction: row;
                 flex-wrap:wrap;
@@ -150,7 +140,7 @@ $estilos: (
             .blog__entradas{
                 color: #204580;
                 top: 25px;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 display: flex;
                 flex-direction: row;
                 flex-wrap:wrap;
@@ -162,6 +152,28 @@ $estilos: (
                 text-align: start;
             }       
         }
+    }
+}
+.nosotrxs__card{
+    display: flex;
+    flex-direction: row;
+    justify-items: space-around;
+    align-items: center;
+    padding: 0.75rem;
+    margin: 1rem;
+    margin-top: 5rem;
+    border:  double 0.5rem #FF7C70;
+    overflow: hidden;
+    .nosotrxs__lista li{
+        color: white;
+        list-style: lower-greek;
+        margin:2rem;
+    }
+    .nosotrxs__imagen{
+        margin: 1rem;
+        width: 23.5rem;
+        height: 18.5rem;
+        border-radius: 1rem;
     }
 }
 
