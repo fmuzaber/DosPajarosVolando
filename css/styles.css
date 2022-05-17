@@ -288,8 +288,7 @@ h1{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-/*Nosotrxs.html
-esto no esta en SCSS*/
+/*Nosotrxs.html*/
 
 .nosotrxs__card{
     display: flex;
@@ -315,15 +314,14 @@ esto no esta en SCSS*/
     border-radius: 1rem;
 }
 
-/*Contacto.html
-esto no esta en SCSS*/
-.body__Contacto{
+/*Contacto.html*/
+/* .body__Contacto{
     margin:0;
     padding:0;
     box-sizing: border-box;
-}
+} */
 
-.contacto__Formulario{
+/* .contacto__Formulario{
     padding: 30px;
     text-align: center;
     justify-items: center;
@@ -332,9 +330,9 @@ esto no esta en SCSS*/
     align-items: center;
     text-align: center;
     margin-left: 0;
-}
+} */
 
-.formulario__Etiquetas{
+/* .formulario__Etiquetas{
     color: white;
     display: inline-block;
     height: 200px;
@@ -343,15 +341,15 @@ esto no esta en SCSS*/
     text-align: center;
     border: solid 10px white;
     margin-left: 0;
-}
-.formulario__Caja{
+} */
+/* .formulario__Caja{
    width: 30%;
    text-align: center;
-}
+} */
 
-.formulario__Botones{
+/* .formulario__Botones{
     text-align: center;
-}
+} */
 
 
 .relatos__entradas{
@@ -377,11 +375,10 @@ esto no esta en SCSS*/
     width: 300px;
     height: 200px;
 }
-.destinos__Fotos h3{
+/* .destinos__Fotos h3{
     margin:1rem;
-}
-/*Rama 1 Animado.html
-esto no esta en SCSS*/
+} */
+/*Rama 1 Animado.html*/
 .animado__animated{
     background-image: radial-gradient(white, red, white);
     transition: all 4s;

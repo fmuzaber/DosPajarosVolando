@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+  overflow-x: hidden; }
 
 html {
   font-size: 62,5%; }
@@ -187,9 +188,58 @@ body {
     height: 18.5rem;
     border-radius: 1rem; }
 
+.relatos__entradas {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem; }
+  .relatos__entradas .blog__subtitulo {
+    margin-top: 0.5rem;
+    font-size: 2rem; }
+
+.destinos__Fotos {
+  display: flex;
+  flex-direction: column; }
+  .destinos__Fotos .fotos__Galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden; }
+
+.animado__animated {
+  background-image: radial-gradient(white, red, white);
+  transition: all 4s; }
+  .animado__animated:hover {
+    transform: scaleY(1.2); }
+
+@keyframes animado {
+  0% {
+    width: 100px; }
+  10% {
+    width: 50px;
+    background-color: white; }
+  25% {
+    width: 300px; }
+  50% {
+    width: 200px;
+    background-color: red; }
+  75% {
+    width: 300px; }
+  100% {
+    width: 100px;
+    background-color: white; } }
+
+.keyframe__animado {
+  width: 100%;
+  height: 100%;
+  animation-name: animado;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 60s;
+  animation-delay: 5s; }
+
 .footer {
   display: flex;
-  background-image: url("../footer.jpg");
+  background-image: url("../images/footer.jpg");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
