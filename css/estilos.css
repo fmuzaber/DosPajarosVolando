@@ -64,7 +64,7 @@ body {
     .color__cabecera .logo__hijo .logo {
       height: 75px;
       width: 75x; }
-  .color__cabecera .portada__imagen {
+  .color__cabecera .portada__imagen_index {
     background-image: url("../images/portada4.jpeg");
     background-position: center;
     background-repeat: no-repeat;
@@ -72,13 +72,13 @@ body {
     height: 25rem;
     width: 100%;
     position: center; }
-    .color__cabecera .portada__imagen h1 {
+    .color__cabecera .portada__imagen_index h1 {
       display: none; }
     @media (max-width: 768px) {
-      .color__cabecera .portada__imagen {
+      .color__cabecera .portada__imagen_index {
         width: 100%; } }
     @media (max-width: 360px) {
-      .color__cabecera .portada__imagen {
+      .color__cabecera .portada__imagen_index {
         width: 100%; } }
 
 .blog__titulo {
@@ -239,7 +239,7 @@ body {
 
 .footer {
   display: flex;
-  background-image: url("../images/footer.jpg");
+  background-image: url("../../images/footer3.jpg");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
