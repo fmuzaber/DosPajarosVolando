@@ -52,23 +52,29 @@
                 <div class="logo__hijo">
                     <a href="#"><img class="logo img-fluid" src="../images/logo9.jpeg" alt="Logo"></a>
                 </div>
-                <div class="portada__imagen">
+                <div class="portada__imagen_contacto">
                     <h1 class="portada__titulo">Dos Pájaros Volando - Contacto</h1>
                 </div>
             </div>
         </div>
         <h2 class="blog__subtitulo">Contacto</h2>
+        <div class="row col-lg-12 mb-3">
             <div class="mb-3">
-                <label for="nombre" class="form-label formulario__Etiquetas">Nombre</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1"  placeholder="Nombre" name="nombre" required>
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@example.com">
+                <form method='post' action='php/formulario.php' > 
+                <fieldset>  
+                <label for='nombre' class="form-label">Nombre y Apellido</label>
+                <input type='text' class="form-control " id="exampleFormControlInput1" name='nombre' required>
+                <label for='email' class="form-label blog__entradas">Email</label>
+                <input type='email' class="form-control" id="exampleFormControlInput1" name='email' placeholder="nombre@tumail.com" required>
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder= "Deje su mensaje "></textarea>
+                <label for='msg' class="form-label">Deje su mensaje</label>
+                <textarea name='msg' class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Escriba el motivo de contacto, por favor"></textarea>
             </div>
-            <button type="button" class="btn btn-primary formulario__Botones">Enviar</button>
+                </fieldset>
+                </form>   
+        </div>
+        <button type="button" class="btn btn-primary" name="enviar">Enviar</button>
         <div class="row col-lg-12">
             <footer id="pie" class="footer img-fluid">
                 <div class="footer__redes">

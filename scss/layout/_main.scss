@@ -23,6 +23,22 @@
     justify-content: center;
     align-items: center;
 }
+.portadas{
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @include sizes(100%, 25rem);      
+    position: center;
+    h1{
+        display:none;
+    }
+    @include media-query(md) {
+        width: 100%;
+    }
+    @include media-query(sm) {
+        width: 100%;
+    }
+}
 .color__cabecera{
     background-color: #53ca98;
     display: flex;
@@ -38,21 +54,25 @@
     }
     .portada__imagen_index {                          
         background-image: url("../images/portada4.jpeg"); 
-        background-position:center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        @include sizes(100%, 25rem);      
-        position: center;
-        h1{
-            display:none;
-        }
-        @include media-query(md) {
-            width: 100%;
-        }
-        @include media-query(sm) {
-            width: 100%;
-        }
+        @extend .portadas;
     }
+    .portada__imagen_nosotrxs {                          
+        background-image: url("../images/nosotrxs6.jpg"); 
+        @extend .portadas;
+    }
+    .portada__imagen_multimedia {                          
+        background-image: url("../images/multimedia2.jpg"); 
+        @extend .portadas;
+    }
+    .portada__imagen_relatos {                          
+        background-image: url("../images/relatos.jpg"); 
+        @extend .portadas;
+    }
+    .portada__imagen_contacto {                          
+        background-image: url("../images/contacto.jpg"); 
+        @extend .portadas;
+    }
+
 }
 $estilos: (
     color: white,
@@ -89,15 +109,17 @@ $estilos: (
     justify-content: space-around;
     .blog__hijo1{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-items: center;
+        @extend .centrar;
         .blog__imagen{
             display: flex;
             margin: 1.5rem;
-            @include sizes(300px, 180px);  
+            @include sizes(100vw, 100vh);  
             border-radius: 25px;
             justify-content: space-around;
             flex-wrap: wrap;
+            @extend .centrar;
         }
         .blog__nieto{
             display: flex;
@@ -120,54 +142,19 @@ $estilos: (
             }       
         }
     }
-    .blog__hijo2{
-        display: flex;
-        flex-direction:row-reverse;
-        justify-items: center;
-        .blog__imagen{
-            display: flex;
-            margin: 1.5rem;
-            @include sizes(300px, 180px);  
-            border-radius: 25px;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .blog__nieto{
-            display: flex;
-            flex-direction: column;
-            @extend .centrar;
-            justify-items: center;  
-            .blog__entradas{
-                color: #204580;
-                top: 25px;
-                font-size: 1.5rem;
-                display: flex;
-                flex-direction: row;
-                flex-wrap:wrap;
-                justify-content:space-around;
-                align-items: center;
-                justify-items: auto;
-                line-height: 1.4;
-                margin: 1rem;
-                text-align: start;
-            }       
-        }
-    }
 }
+    
 .nosotrxs__card{
     display: flex;
-    flex-direction: row;
-    justify-items: space-around;
-    align-items: center;
+    flex-direction: column;
     padding: 0.75rem;
     margin: 1rem;
-    margin-top: 5rem;
-    border:  double 0.5rem #FF7C70;
+    margin-top: 2rem;
     overflow: hidden;
     .nosotrxs__lista li{
         color: white;
-        list-style: lower-greek;
-        margin:2rem;
+        font-size: 2rem;
+        margin: 1.5rem;
     }
     .nosotrxs__imagen{
         margin: 1rem;
@@ -177,9 +164,13 @@ $estilos: (
     }
 }
 .relatos__entradas{
-    margin:0;
+    margin:1.5rem;
+    margin-right: 2rem;
     padding:0;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    p{
+        margin:1.5rem;
+    }
 
     .blog__subtitulo{
         margin-top: 0.5rem;

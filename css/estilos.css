@@ -14,7 +14,8 @@ html {
 body {
   background-color: #53ca98;
   font-family: tipografia, sans serif;
-  font-size: 2.5rem; }
+  font-size: 1.5rem;
+  color: #24256d; }
 
 .color__nav {
   background-color: #53ca98; }
@@ -36,7 +37,7 @@ body {
     justify-items: space-evenly;
     align-items: space-around;
     width: 16,66%;
-    font-size: 30px; }
+    font-size: 20px; }
     .barraNavegacion li a {
       color: white;
       text-decoration: none;
@@ -49,9 +50,25 @@ body {
         transition: 1s;
         text-shadow: 0; }
 
-.centrar, .color__nav, .barraNavegacion, .barraNavegacion li, .color__cabecera, .blog__contenedor .blog__hijo1 .blog__nieto, .blog__contenedor .blog__hijo2 .blog__nieto {
+.centrar, .color__nav, .barraNavegacion, .barraNavegacion li, .color__cabecera, .blog__contenedor .blog__hijo1, .blog__contenedor .blog__hijo1 .blog__imagen, .blog__contenedor .blog__hijo1 .blog__nieto {
   justify-content: center;
   align-items: center; }
+
+.portadas, .color__cabecera .portada__imagen_index, .color__cabecera .portada__imagen_nosotrxs, .color__cabecera .portada__imagen_multimedia, .color__cabecera .portada__imagen_relatos, .color__cabecera .portada__imagen_contacto {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 25rem;
+  width: 100%;
+  position: center; }
+  .portadas h1, .color__cabecera .portada__imagen_index h1, .color__cabecera .portada__imagen_nosotrxs h1, .color__cabecera .portada__imagen_multimedia h1, .color__cabecera .portada__imagen_relatos h1, .color__cabecera .portada__imagen_contacto h1 {
+    display: none; }
+  @media (max-width: 768px) {
+    .portadas, .color__cabecera .portada__imagen_index, .color__cabecera .portada__imagen_nosotrxs, .color__cabecera .portada__imagen_multimedia, .color__cabecera .portada__imagen_relatos, .color__cabecera .portada__imagen_contacto {
+      width: 100%; } }
+  @media (max-width: 360px) {
+    .portadas, .color__cabecera .portada__imagen_index, .color__cabecera .portada__imagen_nosotrxs, .color__cabecera .portada__imagen_multimedia, .color__cabecera .portada__imagen_relatos, .color__cabecera .portada__imagen_contacto {
+      width: 100%; } }
 
 .color__cabecera {
   background-color: #53ca98;
@@ -65,21 +82,15 @@ body {
       height: 75px;
       width: 75x; }
   .color__cabecera .portada__imagen_index {
-    background-image: url("../images/portada4.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 25rem;
-    width: 100%;
-    position: center; }
-    .color__cabecera .portada__imagen_index h1 {
-      display: none; }
-    @media (max-width: 768px) {
-      .color__cabecera .portada__imagen_index {
-        width: 100%; } }
-    @media (max-width: 360px) {
-      .color__cabecera .portada__imagen_index {
-        width: 100%; } }
+    background-image: url("../images/portada4.jpeg"); }
+  .color__cabecera .portada__imagen_nosotrxs {
+    background-image: url("../images/nosotrxs6.jpg"); }
+  .color__cabecera .portada__imagen_multimedia {
+    background-image: url("../images/multimedia2.jpg"); }
+  .color__cabecera .portada__imagen_relatos {
+    background-image: url("../images/relatos.jpg"); }
+  .color__cabecera .portada__imagen_contacto {
+    background-image: url("../images/contacto.jpg"); }
 
 .blog__titulo {
   background-color: white;
@@ -111,13 +122,13 @@ body {
   justify-content: space-around; }
   .blog__contenedor .blog__hijo1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-items: center; }
     .blog__contenedor .blog__hijo1 .blog__imagen {
       display: flex;
       margin: 1.5rem;
-      height: 180px;
-      width: 300px;
+      height: 100vh;
+      width: 100vw;
       border-radius: 25px;
       justify-content: space-around;
       flex-wrap: wrap; }
@@ -138,50 +149,18 @@ body {
         line-height: 1.4;
         margin: 1rem;
         text-align: start; }
-  .blog__contenedor .blog__hijo2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-items: center; }
-    .blog__contenedor .blog__hijo2 .blog__imagen {
-      display: flex;
-      margin: 1.5rem;
-      height: 180px;
-      width: 300px;
-      border-radius: 25px;
-      justify-content: space-around;
-      flex-wrap: wrap; }
-    .blog__contenedor .blog__hijo2 .blog__nieto {
-      display: flex;
-      flex-direction: column;
-      justify-items: center; }
-      .blog__contenedor .blog__hijo2 .blog__nieto .blog__entradas {
-        color: #204580;
-        top: 25px;
-        font-size: 1.5rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        justify-items: auto;
-        line-height: 1.4;
-        margin: 1rem;
-        text-align: start; }
 
 .nosotrxs__card {
   display: flex;
-  flex-direction: row;
-  justify-items: space-around;
-  align-items: center;
+  flex-direction: column;
   padding: 0.75rem;
   margin: 1rem;
-  margin-top: 5rem;
-  border: double 0.5rem #FF7C70;
+  margin-top: 2rem;
   overflow: hidden; }
   .nosotrxs__card .nosotrxs__lista li {
     color: white;
-    list-style: lower-greek;
-    margin: 2rem; }
+    font-size: 2rem;
+    margin: 1.5rem; }
   .nosotrxs__card .nosotrxs__imagen {
     margin: 1rem;
     width: 23.5rem;
@@ -189,9 +168,12 @@ body {
     border-radius: 1rem; }
 
 .relatos__entradas {
-  margin: 0;
+  margin: 1.5rem;
+  margin-right: 2rem;
   padding: 0;
-  font-size: 1.5rem; }
+  font-size: 2rem; }
+  .relatos__entradas p {
+    margin: 1.5rem; }
   .relatos__entradas .blog__subtitulo {
     margin-top: 0.5rem;
     font-size: 2rem; }
@@ -239,7 +221,7 @@ body {
 
 .footer {
   display: flex;
-  background-image: url("../../images/footer3.jpg");
+  background-image: url("../images/footer3.jpg");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
