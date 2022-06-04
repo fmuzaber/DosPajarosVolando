@@ -239,7 +239,7 @@ body {
 
 .footer {
   display: flex;
-  background-image: url("../../images/footer.JPG");
+  background-image: url("../images/footer.jpg");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
