@@ -156,7 +156,7 @@ body {
         color: #022c22ec;
         font-weight: bold;
         top: 10px;
-        font-size: 0.8rem;
+        font-size: 1rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -171,13 +171,13 @@ body {
               width: 100%; } }
         @media (max-width: 768px) {
           .blog__contenedor .blog__hijo1 .blog__nieto .blog__entradas {
-            font-size: 0.7rem; }
+            font-size: 0.5rem; }
             .blog__contenedor .blog__hijo1 .blog__nieto .blog__entradas .blog__imagen {
               height: 55%;
               width: 50%; } }
         @media (max-width: 360px) {
           .blog__contenedor .blog__hijo1 .blog__nieto .blog__entradas {
-            font-size: 0.4rem; }
+            font-size: 0.3rem; }
             .blog__contenedor .blog__hijo1 .blog__nieto .blog__entradas .blog__imagen {
               height: 55%;
               width: 50%; } }
@@ -185,9 +185,27 @@ body {
 .entrada__presentacion {
   color: #f1f5f3;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.7rem;
   margin: 1.5rem;
   margin-right: 2rem; }
+  @media (max-width: 1200px) {
+    .entrada__presentacion {
+      font-size: 0.8rem; }
+      .entrada__presentacion .blog__imagen {
+        height: 100%;
+        width: 100%; } }
+  @media (max-width: 768px) {
+    .entrada__presentacion {
+      font-size: 0.7rem; }
+      .entrada__presentacion .blog__imagen {
+        height: 55%;
+        width: 50%; } }
+  @media (max-width: 360px) {
+    .entrada__presentacion {
+      font-size: 0.4rem; }
+      .entrada__presentacion .blog__imagen {
+        height: 55%;
+        width: 50%; } }
 
 .nosotrxs__card {
   display: flex;

@@ -145,7 +145,7 @@ $estilos: (
                 color: #022c22ec;
                 font-weight: bold;
                 top: 10px;
-                font-size: 0.8rem;
+                font-size: 1rem;
                 display: flex;
                 flex-direction: row;
                 flex-wrap:wrap;
@@ -156,10 +156,10 @@ $estilos: (
                     font-size:0.8rem;
                 }
                 @include media-query(md) {
-                    font-size:0.7rem;
+                    font-size:0.5rem;
                 }
                 @include media-query(sm) {
-                    font-size:0.4rem;;
+                    font-size:0.3rem;;
                 }
             }       
         }
@@ -168,9 +168,18 @@ $estilos: (
 .entrada__presentacion{
     color: #f1f5f3;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.7rem;
     margin:1.5rem;
     margin-right:2rem;
+    @include media-query(lg) {
+        font-size:0.8rem;
+    }
+    @include media-query(md) {
+        font-size:0.7rem;
+    }
+    @include media-query(sm) {
+        font-size:0.4rem;;
+    }
 }
 .nosotrxs__card{
     display: flex;
