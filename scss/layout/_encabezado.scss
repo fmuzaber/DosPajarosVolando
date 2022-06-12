@@ -4,7 +4,7 @@
 }
 .barraNavegacion{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     font-size:0;
     width: 100%;
@@ -18,20 +18,20 @@
         flex-wrap:wrap;
         padding: 2px;
         margin: 3px;
-        justify-items: space-evenly;
-        align-items: space-around;
+        justify-items: space-between;
+        align-items: center;
         width: 16,66%;
-        font-size: 20px;
+        font-size: 21.5px;
         @extend .centrar;
     a{
         color: white;
         text-decoration: none;
-        text-shadow: 2px 2px 2px #FF7C70;
+        text-shadow: 2px 2px 2px #02574293;
         display:flex;
         flex-wrap:wrap;
-        margin-left: 7vw; 
+        margin-left: 6vw; 
         &:hover{
-            color:#FF7C70;
+            color:#02574293;
             transition: 1s;
             text-shadow: 0;
         }
