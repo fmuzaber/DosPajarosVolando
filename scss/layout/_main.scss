@@ -170,15 +170,15 @@ $estilos: (
     font-weight: bold;
     font-size: 0.7rem;
     margin:1.5rem;
-    margin-right:2rem;
+    margin-right:3rem;
     @include media-query(lg) {
-        font-size:0.8rem;
+        font-size:1rem;
     }
     @include media-query(md) {
-        font-size:0.7rem;
+        font-size:0.8rem;
     }
     @include media-query(sm) {
-        font-size:0.4rem;;
+        font-size:1rem;;
     }
 }
 .nosotrxs__card{
@@ -202,6 +202,7 @@ $estilos: (
         margin-right:3rem;
         font-size:1rem;
         font-weight: bold;
+        flex-wrap: nowrap;
         @include media-query(lg) {
             font-size:0.8rem;
         }
@@ -209,7 +210,7 @@ $estilos: (
             font-size:0.7rem;
         }
         @include media-query(sm) {
-            font-size:0.4rem;;
+            font-size:0.3rem;
         }
     }
 

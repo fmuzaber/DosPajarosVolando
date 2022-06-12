@@ -187,22 +187,22 @@ body {
   font-weight: bold;
   font-size: 0.7rem;
   margin: 1.5rem;
-  margin-right: 2rem; }
+  margin-right: 3rem; }
   @media (max-width: 1200px) {
     .entrada__presentacion {
-      font-size: 0.8rem; }
+      font-size: 1rem; }
       .entrada__presentacion .blog__imagen {
         height: 100%;
         width: 100%; } }
   @media (max-width: 768px) {
     .entrada__presentacion {
-      font-size: 0.7rem; }
+      font-size: 0.8rem; }
       .entrada__presentacion .blog__imagen {
         height: 55%;
         width: 50%; } }
   @media (max-width: 360px) {
     .entrada__presentacion {
-      font-size: 0.4rem; }
+      font-size: 1rem; }
       .entrada__presentacion .blog__imagen {
         height: 55%;
         width: 50%; } }
@@ -226,7 +226,8 @@ body {
     margin: 1.5rem;
     margin-right: 3rem;
     font-size: 1rem;
-    font-weight: bold; }
+    font-weight: bold;
+    flex-wrap: nowrap; }
     @media (max-width: 1200px) {
       .relatos__entradas p {
         font-size: 0.8rem; }
@@ -241,7 +242,7 @@ body {
           width: 50%; } }
     @media (max-width: 360px) {
       .relatos__entradas p {
-        font-size: 0.4rem; }
+        font-size: 0.3rem; }
         .relatos__entradas p .blog__imagen {
           height: 55%;
           width: 50%; } }
