@@ -185,7 +185,7 @@ body {
 .entrada__presentacion {
   color: #f1f5f3;
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 1rem;
   margin: 1.5rem;
   margin-right: 3rem; }
   @media (max-width: 1200px) {
